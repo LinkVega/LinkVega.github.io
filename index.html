@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<script>
+const LINK_TABLE = {
+	"x8wU1": "https://penielranch.org/events",
+	"mikcool": "https://mikjakrych.github.io"
+}
+let tail = location.hash.replaceAll("#","");
+
+if(LINK_TABLE[tail]){
+location = LINK_TABLE[tail]
+}
+</script>
 </body>
 </html>
