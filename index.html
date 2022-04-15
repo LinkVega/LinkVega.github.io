@@ -2,29 +2,33 @@
 
 <html lang="en">
 
-    
 <head>
-<meta charset="UTF-8">
+
+    <script>
+        const LINK_TABLE = {
+        	"x8wU1": "https://penielranch.org/events",
+        	"mikcool": "https://mikjakrych.github.io",
+        	"2M6Vy1": "https://www.irs.gov/charities-and-nonprofits",
+        	"8zTi2": "https://www.llamau.org.uk/what-causes-youth-homelessness"
+        }
+        let tail = location.hash.replaceAll("#","");
+        
+        if(LINK_TABLE[tail]){
+        location = LINK_TABLE[tail]
+        }
+    </script>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-<script>
-const LINK_TABLE = {
-	"x8wU1": "https://penielranch.org/events",
-	"mikcool": "https://mikjakrych.github.io",
-	"2M6Vy1": "https://www.irs.gov/charities-and-nonprofits",
-	"8zTi2": "https://www.llamau.org.uk/what-causes-youth-homelessness"
-}
-let tail = location.hash.replaceAll("#","");
-
-if(LINK_TABLE[tail]){
-location = LINK_TABLE[tail]
-}
-</script>
+    <title>LINKVEGA | Next Gen URL Shortener</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
 </head>
-<body>
-<div>
 
-</div>
+<body style="margin: 0;width: 100vw;height: 100vh;background-image: linear-gradient(#0000, #262626), url(&quot;https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg&quot;);background-size: cover;background-position: center center;display: flex;align-items: center;justify-content: center;flex-direction:column;background-attachment:fixed">
+    <div>
+        <h1 style="text-align:center"><img src="./linkvega.svg" style="width:80vw;max-width:800px" alt="linkvega icon"></h1>
+        <p style="text-align:center;font-family:sans-serif;color:white;letter-spacing:3px;text-transform:uppercase">We connect galaxies</p>
+    </div>
 </body>
+
 </html>
